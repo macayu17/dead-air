@@ -59,6 +59,6 @@ Chrome must be installed. Re-running this script records a new demo and overwrit
 
 ## Submission state
 
-Local implementation, tests, screenshots, demo recording, license, attribution, and DEV draft are prepared. The user authorized public publication on October 31, 2026. The public repository is https://github.com/macayu17/dead-air. GitHub Pages hosting and DEV publication are in progress; the entry is not submitted until the post is published with working public links.
+Local implementation, tests, screenshots, demo recording, license, attribution, and DEV draft are prepared. The user authorized public publication on October 31, 2026. The public repository is https://github.com/macayu17/dead-air. The recorded demo is hosted at https://macayu17.github.io/dead-air/; its page and video playback were verified in a fresh Chrome context without login. DEV publication is in progress; the entry is not submitted until the post is published with working public links.
 
 No hosted interactive inference deployment, remote CI run, automated content-moderation service, cross-platform runtime check, or formal accessibility audit was performed. The interface uses labels, keyboard focus, a skip link, live status, reduced-motion support, and mobile touch targets; those features were checked locally. The model can still produce poor or unsuitable fiction.

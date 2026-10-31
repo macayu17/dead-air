@@ -6,7 +6,7 @@ Built for [Hacktoberfest Week 4: Ghost in the Machine](https://dev.to/challenges
 
 ![Dead Air after receiving a real local transmission](artifacts/desktop-transmission.png)
 
-[Recorded demo](docs/demo.mp4) · [Verification notes](docs/verification.md)
+[Watch the recorded demo](https://macayu17.github.io/dead-air/) · [Verification notes](docs/verification.md)
 
 ## Run the radio
 

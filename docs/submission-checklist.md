@@ -16,8 +16,8 @@ Sources checked October 31, 2026:
 - [x] Real local inference and an independent network-blocked generation were verified.
 - [x] Desktop/mobile screenshots and a 54-second real browser walkthrough are prepared.
 - [x] README, MIT license, model attribution, setup instructions, and verification notes are present.
-- [ ] Publish a public code repository and insert its real URL in the Code section.
-- [ ] Upload the real demo video and insert its public URL in the Demo section.
+- [x] Publish a public code repository and insert its real URL in the Code section: https://github.com/macayu17/dead-air.
+- [x] Host the real demo video and insert its public URL in the Demo section: https://macayu17.github.io/dead-air/.
 - [ ] Preview the DEV post and check both links without logging in.
 - [ ] Publish the post before October 31, 2026 at 11:59 p.m. PDT (**November 1, 2026 at 12:29 p.m. IST**).
 
@@ -33,6 +33,6 @@ Agent-session links and partner categories are optional. This project does not c
 
 ## Publication handoff
 
-The draft deliberately uses visible `REPLACE_...` markers for the two public URLs. Replace those markers after the actual destinations exist, remove the editorial note below the front matter, and set `published: true` only when publishing. Do not publish a draft with local file paths or invented links.
+The draft now contains verified public repository and demo URLs. Set `published: true` only when publishing. Preview the post, verify the two required challenge tags, and record the resulting article URL after the site confirms publication.
 
-`docs/index.html` and `docs/demo.mp4` form a small, static video page suitable for GitHub Pages served from `/docs` on the `main` branch. This hosts the recorded walkthrough; it does not host the interactive inference server. Publish the repository, enable Pages, check the resulting public URL, then use it in the Demo section. That avoids requiring judges to install a model just to see the project work.
+`docs/index.html` and `docs/demo.mp4` are hosted by GitHub Pages from `/docs` on the `main` branch. Public video playback was verified without logging in. This hosts the recorded walkthrough; the interactive inference server runs locally. Judges can watch the project work without installing a model.
