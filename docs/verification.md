@@ -14,6 +14,7 @@ Local checks on Windows with Node 22.22.3, Python 3.13.5, and Python Playwright 
 | Offline inference | Fresh process, `OFFLINE=1`, and `env.fetch` replaced with a function that throws on any network attempt. SmolLM2-1.7B generated a house remembrance in 28.3 seconds, including loading cached weights; network attempts: **0**. |
 | Recorded request | Railway station prompt, actual local model, 27.7 seconds including cached-weight loading. Text and metadata saved to `artifacts/browser-result.json`. |
 | Demo | Real browser recording, no cuts or speed changes. `docs/demo.mp4`: 54.04 seconds, H.264, 1440 × 1100, silent, about 955 KB. The static demo page loaded and parsed the video in Chrome 156. A frame from the encoded MP4 was inspected. |
+| Published submission | The DEV article returned HTTP 200 in a fresh Chrome context without login. All five required headings, both challenge tags, repository and demo URLs, and AI-use disclosure were verified. Evidence: `artifacts/submission-result.json`. |
 
 The tests intentionally log one simulated model failure to verify that a later request can succeed. It is expected test output.
 
@@ -59,6 +60,6 @@ Chrome must be installed. Re-running this script records a new demo and overwrit
 
 ## Submission state
 
-Local implementation, tests, screenshots, demo recording, license, attribution, and DEV draft are prepared. The user authorized public publication on October 31, 2026. The public repository is https://github.com/macayu17/dead-air. The recorded demo is hosted at https://macayu17.github.io/dead-air/; its page and video playback were verified in a fresh Chrome context without login. DEV publication is in progress; the entry is not submitted until the post is published with working public links.
+The user authorized public publication on October 31, 2026. The repository is public at https://github.com/macayu17/dead-air. The recorded demo is hosted at https://macayu17.github.io/dead-air/; its page and video playback were verified in a fresh Chrome context without login. The entry was published at https://dev.to/macayu17/dead-air-a-ghost-station-running-on-my-own-cpu-k0n before the deadline. Its required sections, challenge tags, code and demo links, and anonymous accessibility were verified. DEV displays the Fully Autonomous AI disclosure for this agent-written article.
 
-No hosted interactive inference deployment, remote CI run, automated content-moderation service, cross-platform runtime check, or formal accessibility audit was performed. The interface uses labels, keyboard focus, a skip link, live status, reduced-motion support, and mobile touch targets; those features were checked locally. The model can still produce poor or unsuitable fiction.
+Interactive inference was not deployed to a public server. GitHub Pages builds host the recorded demo; no remote application test suite, automated content-moderation service, cross-platform runtime check, or formal accessibility audit was performed. The interface uses labels, keyboard focus, a skip link, live status, reduced-motion support, and mobile touch targets; those features were checked locally. The model can still produce poor or unsuitable fiction.

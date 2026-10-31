@@ -18,8 +18,10 @@ Sources checked October 31, 2026:
 - [x] README, MIT license, model attribution, setup instructions, and verification notes are present.
 - [x] Publish a public code repository and insert its real URL in the Code section: https://github.com/macayu17/dead-air.
 - [x] Host the real demo video and insert its public URL in the Demo section: https://macayu17.github.io/dead-air/.
-- [ ] Preview the DEV post and check both links without logging in.
-- [ ] Publish the post before October 31, 2026 at 11:59 p.m. PDT (**November 1, 2026 at 12:29 p.m. IST**).
+- [x] Preview the DEV post and check both links without logging in.
+- [x] Publish the post before October 31, 2026 at 11:59 p.m. PDT (**November 1, 2026 at 12:29 p.m. IST**).
+
+Published submission: https://dev.to/macayu17/dead-air-a-ghost-station-running-on-my-own-cpu-k0n. Anonymous access, required headings, challenge tags, and both public links were verified. The article uses DEV's Fully Autonomous AI writing disclosure and also states the AI assistance in its body.
 
 The entry is not submitted until the DEV post is published. Submit only one entry for this challenge. If another entry was already submitted, the official rules say only the first is considered. Repositories also need to be created within the challenge window. Note any later commits in the README.
 

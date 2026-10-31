@@ -11,3 +11,5 @@ Tracer: download the model and generate one real transmission before committing 
 Verification: npm test; real inference; desktop and mobile browser checks; keyboard and export checks; record a real browser demo. Document exact observations. No fabricated success, testimonials, or partner-category claims.
 
 Public actions: the user authorized repository creation, commits and push, demo hosting, and DEV publication on October 31, 2026. Publish under macayu17/dead-air, serve the recorded demo through GitHub Pages, verify anonymous access, and publish the DEV post with the required tags. Keep local model weights and dependencies out of Git.
+
+Completed: repository and demo published; DEV submission published at https://dev.to/macayu17/dead-air-a-ghost-station-running-on-my-own-cpu-k0n. Anonymous post access, required headings, tags, and links were verified.

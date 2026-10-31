@@ -1,0 +1,16 @@
+{
+  "url": "https://dev.to/macayu17/dead-air-a-ghost-station-running-on-my-own-cpu-k0n",
+  "http_status": 200,
+  "author": "macayu17",
+  "required_sections": 5,
+  "tags": [
+    "devchallenge",
+    "hf26challenge"
+  ],
+  "links": {
+    "Watch the recorded walkthrough": "https://macayu17.github.io/dead-air/",
+    "Source code and local setup": "https://github.com/macayu17/dead-air"
+  },
+  "anonymous_access": true,
+  "ai_disclosure_in_body": true
+}
