@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+.firecrawl/
+artifacts/*.webm
+artifacts/*.mp4
+artifacts/recordings/
+artifacts/*initial.png
+.env
+*.log

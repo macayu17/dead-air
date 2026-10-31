@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8808",
+  "desktop": [
+    1440,
+    1100
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "page_errors": [],
+  "browser_requests": [
+    "http://127.0.0.1:8808/",
+    "http://127.0.0.1:8808/api/status",
+    "http://127.0.0.1:8808/api/transmit",
+    "http://127.0.0.1:8808/app.js",
+    "http://127.0.0.1:8808/favicon.svg",
+    "http://127.0.0.1:8808/style.css"
+  ],
+  "transmission": {
+    "text": "\"The next train will arrive soon,\" my voice echoes through the deserted corridors of the old station. But something's off; there's no other sound besides mine now.",
+    "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "seconds": 27.7,
+    "receivedAt": "2026-10-31T14:52:10.905Z",
+    "place": "an abandoned railway station",
+    "detail": "The next train is announced in my own voice.",
+    "mood": "unsettling"
+  },
+  "checks": [
+    "keyboard skip link",
+    "example notes and moods",
+    "real model generation",
+    "busy state",
+    "download contents",
+    "mobile overflow",
+    "reduced motion",
+    "whitespace validation",
+    "injected HTTP error recovery"
+  ]
+}

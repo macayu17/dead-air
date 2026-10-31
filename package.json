@@ -1,0 +1,19 @@
+{
+  "name": "dead-air",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A haunted shortwave radio powered by a local open-weight model.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "model:download": "node scripts/download-model.js"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.2"
+  }
+}

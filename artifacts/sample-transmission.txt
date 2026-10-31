@@ -1,0 +1,11 @@
+DEAD AIR / FICTIONAL TRANSMISSION
+
+Place: an abandoned railway station
+Listener note: The next train is announced in my own voice.
+Mood: unsettling
+Received: 2026-10-31T14:52:10.905Z
+Model: HuggingFaceTB/SmolLM2-1.7B-Instruct (q4, local CPU)
+
+"The next train will arrive soon," my voice echoes through the deserted corridors of the old station. But something's off; there's no other sound besides mine now.
+
+All transmissions are invented.

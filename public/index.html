@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171a16" />
+    <meta
+      name="description"
+      content="A haunted shortwave radio. Short ghost transmissions, imagined by a small language model running on your own machine."
+    />
+    <title>Dead Air — a station between stations</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip" href="#listener">Skip to the radio controls</a>
+    <div class="page">
+      <header class="masthead">
+        <a class="wordmark" href="/" aria-label="Dead Air home"
+          ><img src="/favicon.svg" width="29" height="29" alt="" />DEAD AIR<span
+            >INDEPENDENT FICTION / EST. 2026</span
+          ></a
+        >
+        <span class="local"><i></i> LOCAL RECEIVER</span>
+      </header>
+      <main>
+        <section class="intro" aria-labelledby="title">
+          <div>
+            <p class="eyebrow">A STATION BETWEEN STATIONS</p>
+            <h1 id="title">There’s someone<br /><em>on the other end.</em></h1>
+          </div>
+          <div class="intro-note">
+            <span class="small-cross" aria-hidden="true">✳</span>
+            <p>
+              Some places hold a signal long after<br class="desktop" />
+              everyone has left. Tell us where to listen.
+            </p>
+            <a href="#about"
+              >What is this place? <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </section>
+
+        <section class="radio" aria-label="Shortwave receiver">
+          <div class="radio-top">
+            <span
+              ><i class="power-light" id="power-light"></i> DA–01 / SHORTWAVE
+              RECEIVER</span
+            ><span>DO NOT ADJUST YOUR EXPECTATIONS</span>
+          </div>
+          <div class="receiver">
+            <div class="speaker" aria-hidden="true">
+              <div class="speaker-grille"></div>
+              <div class="speaker-label">
+                DEAD AIR<br /><span>LISTEN CLOSELY.</span>
+              </div>
+            </div>
+            <div class="receiver-right">
+              <div class="tuner" aria-hidden="true">
+                <div class="frequencies">
+                  <span>88</span><span>92</span><span>96</span><span>100</span
+                  ><span>104</span><span>108</span>
+                </div>
+                <div class="ticks"></div>
+                <span class="needle" id="needle"></span>
+                <div class="band">
+                  <span>FM</span
+                  ><span
+                    >THE DIAL IS DECORATIVE. THE STORIES ARE GENERATED.</span
+                  ><span>MHz</span>
+                </div>
+              </div>
+              <div class="display" id="display" aria-busy="false">
+                <div class="display-meta">
+                  <span id="channel">NO. 000 / STANDING BY</span
+                  ><span id="signal">○ NO SIGNAL</span>
+                </div>
+                <div id="transmission">
+                  <p class="standby">
+                    The quiet is the first thing<br />you notice.
+                  </p>
+                  <p class="standby-sub">
+                    Leave a listener note below.<br />Something might answer.
+                  </p>
+                </div>
+                <div class="display-footer">
+                  <span id="receipt">FICTION, FROM YOUR MACHINE.</span
+                  ><button id="save" class="save" type="button" hidden>
+                    ↓ Save transmission
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="radio-bottom">
+            <span id="model-label">SmolLM2 · 1.7B · Q4 · CPU</span
+            ><span>NO CLOUD. NO ACCOUNT. JUST YOU AND THE STATIC.</span>
+          </div>
+        </section>
+
+        <section
+          class="listener"
+          id="listener"
+          aria-labelledby="listener-title"
+        >
+          <div class="listener-heading">
+            <p class="eyebrow">01 / LEAVE A LISTENER NOTE</p>
+            <h2 id="listener-title">Where are we listening?</h2>
+            <p>A place, an odd detail, and a little silence.</p>
+            <div class="examples">
+              <span>TRY A FREQUENCY</span
+              ><button type="button" data-example="station">
+                The last train <span>↗</span></button
+              ><button type="button" data-example="house">
+                The empty house <span>↗</span></button
+              ><button type="button" data-example="sea">
+                Out at sea <span>↗</span>
+              </button>
+            </div>
+          </div>
+          <form id="radio-form">
+            <label for="place"
+              >THE PLACE <span>100 characters max.</span></label
+            >
+            <input
+              id="place"
+              name="place"
+              maxlength="100"
+              value="an abandoned railway station"
+              required
+              autocomplete="off"
+            />
+            <label for="detail"
+              >SOMETHING THAT DOESN’T BELONG
+              <span>300 characters max.</span></label
+            >
+            <textarea
+              id="detail"
+              name="detail"
+              maxlength="300"
+              rows="2"
+              required
+            >
+The next train is announced in my own voice.</textarea
+            >
+            <fieldset>
+              <legend>THE FEELING</legend>
+              <div class="moods">
+                <label
+                  ><input
+                    type="radio"
+                    name="mood"
+                    value="unsettling"
+                    checked
+                  /><span>Unsettling</span></label
+                ><label
+                  ><input type="radio" name="mood" value="melancholy" /><span
+                    >Melancholy</span
+                  ></label
+                ><label
+                  ><input type="radio" name="mood" value="strange" /><span
+                    >Strange</span
+                  ></label
+                >
+              </div>
+            </fieldset>
+            <button class="tune" id="tune" type="submit">
+              <span id="tune-label">Tune in</span
+              ><span aria-hidden="true">↗</span>
+            </button>
+            <p class="status" id="status" role="status" aria-live="polite">
+              First tune downloads the model (~1.41 GB). Then it works offline.
+            </p>
+            <p class="error" id="error" role="alert" hidden></p>
+          </form>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="about-title">
+          <p class="eyebrow">02 / BEHIND THE STATIC</p>
+          <div>
+            <h2 id="about-title">
+              A small model.<br />An overactive imagination.
+            </h2>
+            <p>
+              Dead Air makes short, fictional ghost transmissions with SmolLM2,
+              an open-weight language model running on your computer through
+              Transformers.js. The dial sets the scene; your note gives it
+              something to haunt.
+            </p>
+            <p>
+              The first run needs an internet connection to download the model
+              from Hugging Face. After that, the cached model can work offline.
+              Your notes and transmissions stay in this tab and the local
+              server’s memory, unless you save a copy.
+            </p>
+            <p class="fine">
+              Small models lose the thread sometimes. Output may be odd,
+              repetitive, or unfinished. All transmissions are invented; this
+              receiver cannot contact people, living or dead.
+            </p>
+            <a
+              href="https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct"
+              target="_blank"
+              rel="noreferrer"
+              >Meet the model <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </section>
+      </main>
+      <footer>
+        <span
+          >DEAD AIR <span class="footer-dot">/</span> KEEP THE STRANGE THINGS
+          CLOSE.</span
+        ><span>GHOST IN THE MACHINE · HACKTOBERFEST 2026</span>
+      </footer>
+    </div>
+  </body>
+</html>
